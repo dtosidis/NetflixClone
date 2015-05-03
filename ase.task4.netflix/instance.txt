@@ -1,0 +1,144 @@
+Distributors:
+	UniversalMusic
+	Address:JP 12 34 43 55 93
+	Account Information:
+		IBAN:JP 12 34 43 55 93
+		BIC:SOMEJPJ1
+
+
+	SonyMusic
+	Address:1 Sony Street, 2345 Tokia, JP
+	Account Information:
+		IBAN:JT 12 34 43 55 93
+		BIC:SOMEJPJ2
+
+
+	AllegroMusic
+	Address:4 Allegro Street, 2345 Tokia, JP
+	Account Information:
+		IBAN:JP 12 34 43 55 95
+		BIC:SOMEJPJ3
+
+
+	OdeonMusic
+	Address:26 Another Street, 12345 New York, NY, US
+	Account Information:
+		IBAN:JP 56 34 43 55 95
+		BIC:SOMEJPJ4
+
+
+Library:
+	Bohemian_Rapsody
+	sung_by:Queen
+	produced_by:OdeonMusic
+	length:5:32
+	genre:ROCK
+	price:3.65
+
+
+	Get_lucky
+	sung_by:Daft Punk
+	produced_by:SonyMusic
+	length:3:01
+	genre:OTHER
+	price:4.32
+
+
+	Song2
+	sung_by:Blur
+	produced_by:UniversalMusic
+	length:4:23
+	genre:ROCK
+	price:3.45
+
+
+	Come_as_you_are
+	sung_by:Nirvana
+	produced_by:AllegroMusic
+	length:7:23
+	genre:CLASSIC
+	price:7.75
+
+
+	Roar
+	sung_by:Katie Perry
+	produced_by:SonyMusic
+	length:2:35
+	genre:POP
+	price:4.67
+
+
+	No_One
+	sung_by:Alicia Keys
+	produced_by:AllegroMusic
+	length:4:35
+	genre:FOLK
+	price:5.85
+
+
+	Call_Me_Maybe
+	sung_by:Carly Rae Jepsen
+	produced_by:OdeonMusic
+	length:4:45
+	genre:CLASSIC
+	price:5.67
+
+
+	Shadow_Dancing
+	sung_by:Andy Gibb
+	produced_by:OdeonMusic
+	length:4:21
+	genre:FOLK
+	price:3.47
+
+
+	I_Want_to_Hold_Your_Hand
+	sung_by:The Beatles
+	produced_by:AllegroMusic
+	length:4:35
+	genre:CLASSIC
+	price:8.67
+
+
+	Its_All_in_the_Game
+	sung_by:Tommy Edwards
+	produced_by:SonyMusic
+	length:6:35
+	genre:HARDROCK
+	price:7.67
+
+
+	How_You_Remind_Me
+	sung_by:Nickelback
+	produced_by:UniversalMusic
+	length:2:35
+	genre:POP
+	price:4.23
+
+
+Playlists:
+	SimpleList
+	consists_of:[Bohemian_Rapsody, Come_as_you_are, Get_lucky, Roar]
+
+
+	ComplexList
+	consists_of:[Song2, I_Want_to_Hold_Your_Hand, Its_All_in_the_Game]
+	playlist:[SimpleList]
+	without:[SimpleList:[Get_lucky, Roar]]
+
+
+	RockList
+	consists_of:[How_You_Remind_Me, Call_Me_Maybe, Shadow_Dancing]
+	playlist:[ComplexList]
+
+
+	OtherList
+	consists_of:[No_One, How_You_Remind_Me]
+
+
+	AnotherList
+	consists_of:[I_Want_to_Hold_Your_Hand]
+	playlist:[SimpleList, OtherList, RockList]
+	without:[SimpleList:[Get_lucky, Roar], OtherList:[How_You_Remind_Me], RockList:[Call_Me_Maybe]]
+
+
